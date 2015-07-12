@@ -109,6 +109,7 @@ def get_data(dir):
     dist = np.sum(train_data_features, axis=0)
     total_words = 0
     for i in train_data_features:
+        print sum(i)
         total_words += sum(i)
     print total_words
 
@@ -127,6 +128,8 @@ def get_data(dir):
         # print title_counts
         #word_freq_list = []
         for word_count in title_counts:
+            # calculate freq of words = percentage of words in front page that match WORD
+            # i.e. 100 * (number of times the WORD appears in the front_page) /  total number of words in front page
             word_freq = 100 * float(word_count) / float(total_words)
             #word_freq_list.append(word_freq)
             sys.stdout.write(str(word_freq) + ',')
