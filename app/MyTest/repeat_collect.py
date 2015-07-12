@@ -34,9 +34,10 @@ def ui_interact():
         scroll = re.findall(r'.*?scrollable=\"true\".*?', xml)
         all_text = re.findall(r'.*?text=.*?', xml)
         none_text = re.findall(r'.*?text=\"\".*?', xml)
-        if len(scroll) == 1 and (len(all_text) - len(none_text)) == 0:
+        if len(scroll) == 1 and (len(all_text) - len(none_text)) <= 2:
+            print 'single scroll '
             # scroll = re.search(r'.*?scrollable=\"true\".*?bounds=\"(.*?)\"', xml)
-            dev.swipe(400, 0, 0, 0) # for 480 * 800
+            dev.swipe(476, 473, 115, 473, 10) # for 480 * 800
             #dev.swipe(600, 0, 0, 0)
         else:
             break
@@ -46,13 +47,14 @@ def ui_interact():
     if len(clickable) == 1:
         node_bounds = clickable[0]
         touch(node_bounds)
+        print 'single click'
     # if detect update info, if 取消， 否
-    option_cancle = [u'否', u'取消']
+    option_cancle = [u'否', u'取消', u'不升级', u'稍后再说', u'稍后', u'稍后更新', u'不更新', u'Not now']
     for i in range(5):
         time.sleep(2)
         xml = dev.dump()
         clickable = re.findall(r'.*?clickable=\"true\".*?bounds=\"(.*?)\"', xml)
-        if len(clickable) == 2:
+        if len(clickable) <= 3:
             print 'found two clickables'
             # re.findall(r'.*?text=\"(.*?)\".*?[^(text=)].*?clickable=\"true\".*?', xml)
             nodelist = xml.split('><')
@@ -104,5 +106,5 @@ current_time = time.strftime(ISOTIMEFORMAT, time.localtime())
 series = '0123456789ABCDEF'
 # series = '014E233C1300800B'
 dev = Device(series)
-dir = '/home/hao/Documents/Loc/Operational/loc.map.baidu.com/com.aawant.hunter/'
+dir = '/home/hao/Documents/Loc/Operational/loc.map.baidu.com/com.ican.appointcoursesystem/'
 os.path.walk(dir, visit, None)

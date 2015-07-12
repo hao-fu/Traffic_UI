@@ -40,7 +40,7 @@ def ui_interact():
         scroll = re.findall(r'.*?scrollable=\"true\".*?', xml)
         all_text = re.findall(r'.*?text=.*?', xml)
         none_text = re.findall(r'.*?text=\"\".*?', xml)
-        if len(scroll) == 1 and (len(all_text) - len(none_text)) == 0:
+        if len(scroll) == 1 and (len(all_text) - len(none_text)) <= 2:
             # scroll = re.search(r'.*?scrollable=\"true\".*?bounds=\"(.*?)\"', xml)
             #dev.swipe(400, 0, 0, 0) # for 480 * 800
             dev.swipe(576, 473, 115, 473, 10)
@@ -54,12 +54,12 @@ def ui_interact():
         touch(node_bounds)
         print 'click single'
     # if detect update info, if 取消， 否
-    option_cancle = [u'否', u'取消', u'不升级', u'稍后再说', u'稍后', u'稍后更新', u'不更新']
+    option_cancle = [u'否', u'取消', u'不升级', u'稍后再说', u'稍后', u'稍后更新', u'不更新', u'Not now']
     for i in range(5):
         time.sleep(2)
         xml = dev.dump()
         clickable = re.findall(r'.*?clickable=\"true\".*?bounds=\"(.*?)\"', xml)
-        if len(clickable) == 2:
+        if len(clickable) <= 3:
             print 'found two clickables'
             # re.findall(r'.*?text=\"(.*?)\".*?[^(text=)].*?clickable=\"true\".*?', xml)
             nodelist = xml.split('><')
