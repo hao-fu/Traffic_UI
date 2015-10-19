@@ -1,15 +1,18 @@
 # -*- coding: utf-8 -*-
 __author__ = 'hao'
 
-from scapy.layers.inet import IP, TCP, UDP
+from scapy.layers.inet import IP, TCP
 from scapy.all import *
 import os
 import re
 
 
 def filter_pcap(dirname, pcap, time, iptable):
-    pkts = rdpcap(dirname + '/' + pcap)
-    # ip = '74.125.239.98'
+    try:
+        pkts = rdpcap(dirname + '/' + pcap)
+    except IOError as e:
+        print e.args
+        return
     for ip in iptable:
         filtered = (pkt for pkt in pkts if
                 TCP in pkt
@@ -35,10 +38,14 @@ def visit(arg, dirname, files):
             if re.search('.*?apk.*?', filename):
                 time = filename.split('apk')[1].split('.')[0]
             else:
-                time = '070' + filename.split('070')[1].split('.')[0]
+                if re.search('070', filename):
+                    time = '070' + filename.split('070')[1].split('.')[0]
+                elif re.search('06', filename):
+                    #time = '06' + filename.split('06')[1].split('.')[0]
+                    time = ''
             pcap = pcap[len(pcap) - 1] + time + '.pcap'
             filter_pcap(dirname, pcap, time, iptable)
 
 ports = [80, 8080]
-dir = '/home/hao/Documents/Loc/'
+dir = '/home/hao/Documents/Loc'
 os.path.walk(dir, visit, None)

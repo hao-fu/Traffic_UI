@@ -5,7 +5,6 @@ Spyder Editor
 """
 import mechanize
 import cookielib
-import urllib
 import socket
 from bs4 import BeautifulSoup
 import re
@@ -54,7 +53,8 @@ def get_apk(fname):
         #cate = cate.split('<')[0]
         cate = str(catesoup.select('a')[1]).split('cid=')[1]
         cate = cate.split('\"')[0]
-        appdir = basedir + out_cate + '/' + cate
+        out_cate = 'goodhtml/map/backup'
+        appdir = basedir + out_cate + '/'
         print '%s %s' % (out_cate, cate)
         #os.system('mkdir ' + basedir + out_cate)
         #os.system('mkdir ' + appdir)
@@ -97,8 +97,10 @@ def get_apk(fname):
         except mechanize.URLError as exc:
             if isinstance(exc.reason, socket.timeout):
                 timeout_occurred = True
+                return
         except (IOError, httplib.HTTPException):
             print 'cannot download from ' + fname
+            return
     #os.system('wget -t 10 --timeout=30 ' + apkurl + ' -O ' + appdir + '/' + fname + '.apk')
     #os.system('mv ' + fname + '.apk ' + appdir + '/' + fname + '.apk')
     os.system('mv ' + htmldir + fname + ' ' + htmldir + 'backup/')
@@ -124,7 +126,7 @@ br.addheaders = [('User-agent',
 br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
 # br.set_debug_http(True)
 basedir = '/media/hao/Hitachi/BaiduApks/'
-htmldir = basedir + '42/'
+htmldir = basedir + 'goodhtml/map/'
 os.system('mkdir ' + htmldir + 'backup/')
 filelist = os.listdir(htmldir)
 html_pattern = re.compile(r'.*?html')

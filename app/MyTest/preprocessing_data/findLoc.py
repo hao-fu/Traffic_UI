@@ -19,14 +19,17 @@ def visit(arg, dirname, files):
                 if re.search('.*?Location.*?', line):
                     print dirname
                     subcounter += 1
-                    os.system('cp -r ' + dirname + ' /home/hao/Documents/Loc')
+                    os.system('cp -r ' + dirname + ' /home/hao/Documents/Loc/social')
                     break
             break
 
 
 counter = 0
 subcounter = 0
-os.path.walk('/media/hao/Hitachi/BaiduApks/software/504/4/LOC/data', visit, None)
+#dir = '/home/hao/Documents/NEWS_AND_MAGAZINES_LOC/'
+#dir = '/media/hao/Hitachi/BaiduApks/software/504/6/LOC/data'
+dir = '/media/hao/Hitachi/Apps/SOCIAL/LOC/data'
+os.path.walk(dir, visit, None)
 print counter
 print subcounter
 print float(subcounter) / float(counter)

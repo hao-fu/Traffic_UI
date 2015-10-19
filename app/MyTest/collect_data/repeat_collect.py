@@ -30,7 +30,17 @@ def touch(node_bounds):
 
 def ui_interact():
     for i in range(8):
-        xml = dev.dump()
+        flag = True
+        counter = 0
+        while flag:
+            try:
+                xml = dev.dump()
+                flag = False
+            except:
+                flag = True
+                counter += 1
+                if counter > 3:
+                    return
         scroll = re.findall(r'.*?scrollable=\"true\".*?', xml)
         all_text = re.findall(r'.*?text=.*?', xml)
         none_text = re.findall(r'.*?text=\"\".*?', xml)
@@ -41,7 +51,7 @@ def ui_interact():
             #dev.swipe(600, 0, 0, 0)
         else:
             break
-    time.sleep(10)
+    time.sleep(5)
     xml = dev.dump()
     clickable = re.findall(r'.*?clickable=\"true\".*?bounds=\"(.*?)\"', xml)
     if len(clickable) == 1:
@@ -49,10 +59,21 @@ def ui_interact():
         touch(node_bounds)
         print 'single click'
     # if detect update info, if 取消， 否
-    option_cancle = [u'否', u'取消', u'不升级', u'稍后再说', u'稍后', u'稍后更新', u'不更新', u'Not now']
+    option_cancle = [u'否', u'取消', u'不升级', u'稍后再说', u'稍后', u'以后'
+                     u'稍后更新', u'不更新', u'以后再说', u'Not now', 'Cancel']
     for i in range(5):
         time.sleep(2)
-        xml = dev.dump()
+        flag = True
+        counter = 0
+        while flag:
+            try:
+                xml = dev.dump()
+                flag = False
+            except:
+                flag = True
+                counter += 1
+                if counter > 3:
+                    return
         clickable = re.findall(r'.*?clickable=\"true\".*?bounds=\"(.*?)\"', xml)
         if len(clickable) <= 3:
             print 'found two clickables'
@@ -71,7 +92,7 @@ def ui_interact():
                         else:
                             break
 
-    time.sleep(15)
+    #time.sleep(15)
 
 def visit(arg, dirname, files):
     global self_row
@@ -94,9 +115,20 @@ def visit(arg, dirname, files):
                 ui_interact()
                 cmd1= 'adb -s ' + series + ' shell /system/bin/screencap -p /sdcard/screenshot.png'
                 os.system(cmd1)
-                cmd1 = 'adb -s ' + series + ' pull /sdcard/screenshot.png ./' + package + current_time + '.png'
+                cmd1 = 'adb -s ' + series + ' pull /sdcard/screenshot.png ' + dirname + '/' + 'first-page.png'
                 os.system(cmd1)
-                dev.dump('first-page.xml')
+                os.system('adb devices')
+                flag = True
+                counter = 0
+                while flag:
+                    try:
+                        dev.dump(dirname + '/' + 'first-page.xml')
+                        flag = False
+                    except:
+                        flag = True
+                        counter += 1
+                        if counter > 3:
+                            break
                 os.system('adb -s ' + series + ' uninstall ' + pkg)
                 print filename
 
@@ -106,5 +138,5 @@ current_time = time.strftime(ISOTIMEFORMAT, time.localtime())
 series = '0123456789ABCDEF'
 # series = '014E233C1300800B'
 dev = Device(series)
-dir = '/home/hao/Documents/Loc/Operational/loc.map.baidu.com/com.ican.appointcoursesystem/'
+dir = '/home/hao/Documents/Ground/Dubious/'
 os.path.walk(dir, visit, None)
