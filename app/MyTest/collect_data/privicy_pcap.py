@@ -93,7 +93,7 @@ def ui_interact():
 series = '014E233C1300800B'
 #series = '0123456789ABCDEF'
 #series = '01b7006e13dd12a1'
-appdir = '/media/hao/Hitachi/BaiduApks/software/504/10/LOC/'  # APP_WALLPAPER
+appdir = '/media/hao/Hitachi/BaiduApks/software/504/14/LOC/'  # APP_WALLPAPER
 #appdir = '/media/hao/Hitachi/BaiduApks/software/508/'
 #appdir = '/media/hao/Hitachi/Apps/SOCIAL/LOC/'
 #os.popen('rm -r -f data')
