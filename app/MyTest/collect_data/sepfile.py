@@ -1,11 +1,11 @@
 import os
 import re
 
-appdir = '/media/hao/Hitachi/BaiduApks/software/504/'
+appdir = '/media/hao/Hitachi/BaiduApks/software/502/'
 filelist = os.listdir(appdir) # list files at current dir
 #filename = str(id) + '.html'
 counter = 0
-dir = 5
+dir = 0
 for file in filelist:
 	if re.search('\.apk', file):
 		print file

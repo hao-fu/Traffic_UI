@@ -2,9 +2,9 @@ __author__ = 'hao'
 import os, re, json#, hashlib
 
 flag = False
-appdir = '/media/hao/Hitachi/BaiduApks/software/504/14/'  # APP_WALLPAPER
+#appdir = '/media/hao/Hitachi/BaiduApks/software/504/18/'  # APP_WALLPAPER
 #appdir = '/media/hao/Hitachi/Apps/SOCIAL/'  # APP_WALLPAPER
-#appdir = '/media/hao/Hitachi/BaiduApks/software/508/'
+appdir = '/media/hao/Hitachi/BaiduApks/software/502/2/'
 outdir = appdir + 'LOC/'
 
 os.system('mkdir ' + outdir)
