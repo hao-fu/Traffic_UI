@@ -1,0 +1,139 @@
+__author__ = 'hao'
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+"""
+import mechanize
+import cookielib
+import urllib
+import socket
+from bs4 import BeautifulSoup
+import re
+import os
+import threading
+import httplib
+import time
+
+out_cate_pattern = re.compile(r'.*?(software|game).*?')
+cate_pattern = re.compile(r'.*?cid.*?>(.*?)<')
+
+# download apk from Baidu html
+
+class DownloadThread(threading.Thread):
+    def __init__(self):
+        threading.Thread.__init__(self)
+
+    def run(self):
+        while True:
+            time.sleep(1)
+            if len(filelist) < 1:
+                break
+            #grabs ufname from flist
+            fname = filelist.pop()
+            if html_pattern.match(fname):
+                print fname
+                get_apk(fname)
+
+
+
+def get_apk(fname):
+    global timeout_occurred
+    #soup = BeautifulSoup(open(basedir + '1/' + str(docid) + '.html', 'r'))
+    soup = BeautifulSoup(open(htmldir + fname, 'r'))
+    try:
+        catesoup = BeautifulSoup(str(soup.select('.nav')))
+        out_cate = str(catesoup.select('a')[0]).split('/')[1]
+        out_cate = out_cate.split('\"')[0]
+        if out_cate == 'game':
+            os.system('rm ' + htmldir + fname)
+            return
+        #cate = str(soup.select('a')[1]).split('>')[1]
+        #cate = cate.split('<')[0]
+        cate = str(catesoup.select('a')[1]).split('cid=')[1]
+        cate = cate.split('\"')[0]
+        appdir = basedir + out_cate + '/' + cate
+        print '%s %s' % (out_cate, cate)
+        #os.system('mkdir ' + basedir + out_cate)
+        #os.system('mkdir ' + appdir)
+
+        #print soup.select('.area-download')
+        apksoup = BeautifulSoup(str(soup.select('.area-download')))
+        apkurl = str(apksoup.select('a')[0]).split('data_url')[1]
+        apkurl = apkurl.split('\"')[1]
+        print apkurl
+        # for child in soup.body.children:
+        #     #print child
+        #     out_cate_result = out_cate_pattern.match(child)
+        #     cate_result = cate_pattern.match(child)
+        #     if out_cate_result:
+        #         print out_cate_result.group(1)
+        #     elif cate_result:
+        #         print cate_result.group(1)
+    except IndexError:
+        apkurl = None
+        soup = 'UNKNOWN'
+
+
+    # values = {'docid': docid}
+    # data = urllib.urlencode(values)
+    # geturl = base_url + '?' + data
+    if apkurl == None:
+            os.system('rm ' + htmldir + fname)
+            return
+    counter = 0
+    timeout_occurred = True
+    while timeout_occurred:
+        try:
+            counter += 1
+              #Open the page
+            if counter > 5:
+                print 'time out for ' + fname
+                break
+            br.retrieve(apkurl, appdir + '/' + fname + '.apk', timeout=30)
+            timeout_occurred = False
+        except mechanize.URLError as exc:
+            if isinstance(exc.reason, socket.timeout):
+                timeout_occurred = True
+        except (IOError, httplib.HTTPException):
+            print 'cannot download from ' + fname
+    #os.system('wget -t 10 --timeout=30 ' + apkurl + ' -O ' + appdir + '/' + fname + '.apk')
+    #os.system('mv ' + fname + '.apk ' + appdir + '/' + fname + '.apk')
+    os.system('mv ' + htmldir + fname + ' ' + htmldir + 'backup/')
+         # retry
+         #br.open(geturl, timeout=5)
+
+
+
+br = mechanize.Browser()
+cj = cookielib.LWPCookieJar()
+br.set_cookiejar(cj)
+ # setting
+br.set_handle_equiv(True)
+br.set_handle_redirect(True)
+br.set_handle_referer(True)
+br.set_handle_robots(False)
+# base_url = 'http://shouji.baidu.com/soft/item'
+# User-Agent (this is cheating, ok?)
+user_agent = 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:38.0) Gecko/20100101 Firefox/38.0'
+br.addheaders = [('User-agent',
+                   'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.1) Gecko/2008071615 Chrome/17.0.963.56 Fedora/3.0.1-1.fc9 Firefox/3.0.1')]
+# Follows refresh 0 but not hangs on refresh > 0
+br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
+# br.set_debug_http(True)
+basedir = '/media/hao/Hitachi/BaiduApks/'
+htmldir = basedir + '23/'
+os.system('mkdir ' + htmldir + 'backup/')
+filelist = os.listdir(htmldir)
+html_pattern = re.compile(r'.*?html')
+# for fname in filelist:
+#     if html_pattern.match(fname):
+#         print fname
+#         get_apk(fname)
+download = DownloadThread()
+download.start()
+download2 = DownloadThread()
+download2.start()
+download3 = DownloadThread()
+download3.start()
+
+

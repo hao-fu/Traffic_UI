@@ -1,0 +1,241 @@
+['www.wifianyware.com', 'www.biznessapps.com', 'search.tixaapp.com', 'a1.easemob.com', 'yinweiapi.paidui.com:81', 't2.apps123.cn', 'ads03.adecosystems.com', 'ads.net2share.com', 'hxqd.openspeech.cn', 'data.flurry.com', 'prod-kalmiya.chinacloudapp.cn', 'a.shopularapp.com', 'channel.api.duapp.com', 'yun.cwwic.com', 'api.map.baidu.com', 'mobads-logs.baidu.com', 'cdn-01.yumenetworks.com', 'postback.aarki.net', 'api.dibbz.co', 'plg2.yumenetworks.com', 'b.scorecardresearch.com', 'w.m.taobao.com', 'log.mmstat.com', 'cfg.adsmogo.net', 'cfg.adsmogo.org', 'alog.umeng.com', 'wap.ggwan.com', 'au.umeng.com', 'cfg.adsmogo.com', 'api.aport.ru', 'up.cm.ksmobile.com', 'www.cm.ksmobile.com', 'appx.91.com', 'api.share.mob.com:80', 'r.domob.cn', 'www.cdnstabletransit.com', 'api.tuisong.baidu.com', 'open.bmob.cn', 'ads.mopub.com', 'api2.sharesdk.cn:5566', 'data.appflood.com', 'amonsul.douban.com', 'restapi.amap.com', 'newdc.appcan.cn', 'aax-us-east.amazon-adsystem.com', 'www.numberonejobsite.com', 'api.getsocialize.com', 'p.appbrain.com', 'bbygaming.gpshopper.com', 'stat.lizhi.fm', 'maps.googleapis.com', 'wv.inner-active.mobi', 'dietassistantapp.com', 'www.google.com', 'mpos.quanminfu.com:7500', 'i.w.inmobi.com', 'mobileapi.flipkart.net', 'www.ligamx.net', 'apiv3.ixingji.com', 'fls-na.amazon.com', 'imp.adsmogo.mobi', 'maps.google.com', 'cfg.adsmogo.mobi', 'api.kiip.me', 'www.keek.com', 'udm.scorecardresearch.com', 'mobads.baidu.com', 'ynuf.alipay.com', 'stats.jpush.cn', 'base.api.dbscar.com', 'mengine.go2map.com', 'appsearch.m.sogou.com', 'cgi.connect.qq.com', 'weixin.appsearch.m.sogou.com', 'pingma.qq.com:80', 'la.api.filmon.com', 'mapi.chinalao.com', 'wspeed.qq.com', 'wireless.mapbar.com', 'nhlwc.cdnak.neulion.com', 'coesius.co', 'splash.appsgeyser.com', 'ads.appsgeyser.com', 'client.bayimob.com', 'oc.umeng.com', 'api.k.sohu.com', 'zcache.k.sohu.com', 'i.go.sohu.com', '221.179.173.175', 'n1.itc.cn', 'api.q.knet.cn', 'www.frostwire.tv', 'collegesuperfan.com', 'cdn.eyeem.com', 'r.platform.seventynine.mobi', 'm.platform.seventynine.mobi', 'cdn.millennialmedia.com', 'static.mobilecore.com', 'androidsdk.ads.mp.mydas.mobi', 'admin.appnext.com', 'api.weather.rj.99.com', 'api.w3i.com', 'xml.livetowin.net', 'northface.gpshopper.com', 'tdcv3.talkingdata.net', 'mobieadmin.sinaapp.com', 'e.dangdang.com', 'express.gpshopper.com', 'push-gw.pingan.com.cn:3000', 'ex.puata.info', 'download.tbcache.com', 'infoc2.duba.net', 'zhiyue.cutt.com', 'apalon.api.appmessages.com', 'www.clypit.com', 'appcenter.falconnect.cn', 'shopping.falconnect.cn', 'ads.admarvel.com', 'a.mologiq.net', 'show.m.mediav.com', 'billboard.publicradioplayer.org', 'shoecarnival.gpshopper.com', 'utl.checkpoints.com', 'p1.checkpoints.com', 'api.inmarket.com', 'api.renasoftware.com', 'moreapp.rcplatformhk.net', 'stat.bonapp.cn', 'img1.indulgesmart.com', 'iservice.bonapp.cn', 'docapi.baidu.com', 'www.newsday.com', 'www.ezhongyi.com.cn:80', 'ip.taobao.com', 'pinkpad.alt12.com', 'www.ddoctor.cn', 'app.radaris.com', 'client.mobocart.in', 'e.apsalar.com', 'bebefry.gpshopper.com', 'api.pushnotification.com.br', 'ins.adsmogo.net', 'ins.adsmogo.org', 'www.wzqx.gov.cn', 'ads.mp.mydas.mobi', 'blippar.com', 'pubads.g.doubleclick.net', 'www.fandango.com', 'api.groupon.com', 'biznessapps.com', 'googleads.g.doubleclick.net', 'fab.com']
+152
+
+['loc.map.baidu.com', 'www.wifianyware.com', 'www.biznessapps.com', 'search.tixaapp.com', 'repdata.9news.com', 'b.scorecardresearch.com', 'a1.easemob.com', 'yinweiapi.paidui.com:81', 'hxqd.openspeech.cn', 'maps.google.com', 'r.domob.cn', 'maps.googleapis.com', 'bea.sportq.com', 't2.apps123.cn', 'api.xiaobangshou.cc', 'ads03.adecosystems.com', 'ads.net2share.com', 'data.flurry.com', 'appservice.yaopao.net', 'prod-kalmiya.chinacloudapp.cn', 'www.google.com', 'unipayupg.wostore.cn:8080', 'm.mobvoi.com:55555', 'a.shopularapp.com', 'channel.api.duapp.com', 'yun.cwwic.com', 'api.map.baidu.com', '211.151.134.222:9010', 'apps.doapps.com', 'm.quantcount.com', 'api.tuisong.baidu.com', 'm.baidu.com', 'm.hao123.com', 'mobads-logs.baidu.com', 'cdn-01.yumenetworks.com', 'postback.aarki.net', 'api.dibbz.co', 'plg2.yumenetworks.com', 'alog.umeng.com', 'clients3.google.com', 'zonagratis.com.br', 'analytics.appledaily.com.hk', 'nxapi.appledaily.com.hk', 'android-appledaily-hk-logging.nextmedia.com', 'w.m.taobao.com', 'log.mmstat.com', 'cfg.adsmogo.net', 'cfg.adsmogo.org', 'wap.ggwan.com', 'au.umeng.com', 'cfg.adsmogo.com', 'api.aport.ru', 'search.centamap.com', 'api.share.mob.com:80', 'ad.hot-mob.com', 'anappnews.vrvm.com', 'aos.gw.youmi.net', 'mt2.google.cn', 'mt0.google.cn', 'mt1.google.cn', 'up.cm.ksmobile.com', 'www.cm.ksmobile.com', 'appx.91.com', 'api.openweathermap.org', 'nominatim.openstreetmap.org', 'scores.espn.go.com', 'www.google-analytics.com', '121.199.65.29', 'api.npr.org', 'api.lego.wireless.58.com', 'cmgapp2.kirotv.com', 'coxnet.112.2o7.net', 'cusapi.zetast.com', '61.174.9.241:6070', 'restapi.amap.com', 'm.amap.com', 'feedback.umeng.com', 'service.xiaoyudangjia.com', 'www.cdnstabletransit.com', 'open.bmob.cn', 'ads.mopub.com', 'www.kmbc.com', 'www.wunderground.com', 'files.kmbc.com', 'api.groupon.com', 'dsx.weather.com', 't.imwx.com', 'api2.sharesdk.cn:5566', 'data.appflood.com', 'api2.sharesdk.cn:80', 'amonsul.douban.com', 'w88.go.com', 'api.haitunjianzhi.com', 'utop.umengcloud.com', 'upoll.umengcloud.com', 'newdc.appcan.cn', 'api.accuweather.com', 'weather.herewetest.com', 'apalon1.accu-weather.com', 'aax-us-east.amazon-adsystem.com', 'api.weicheche.cn', 'xdrig.com', 'www.numberonejobsite.com', 'nav.cn.rong.io', 'sdk.open.phone.igexin.com', 'api.getsocialize.com', 'p.appbrain.com', 'files.4029tv.com', 'www.4029tv.com', 'slavanya.com', 'ws.appsbar.com', 'android.weatherpro.meteogroup.de', 'bbygaming.gpshopper.com', 'ks.51credit.com', 'files.wyff4.com', 'www.wyff4.com', 'stat.lizhi.fm', 'lintv.122.2o7.net', 'wv.inner-active.mobi', 'dietassistantapp.com', '121.40.132.184:80', 'pnc-atm.deeplocal.com', 'mpos.quanminfu.com:7500', 'i.w.inmobi.com', 'mobileapi.flipkart.net', 'tdcv3.talkingdata.net', 'www.wikicrimes.org', 'www.ligamx.net', 'api.xxkuaipao.com', 'a.mologiq.net', 'apiv3.ixingji.com', 'fls-na.amazon.com', 'img.vrvm.com', 'imp.adsmogo.mobi', 'cfg.adsmogo.mobi', 'api.kiip.me', 'mapconfig.mapquest.com', 'www.keek.com', 'udm.scorecardresearch.com', 'data-services.wsi.com', 'data.fuwu.weather.com.cn', 'flattist.com', 'mobads.baidu.com', 'files.wlwt.com', 'www.wlwt.com', 'ynuf.alipay.com', 'stats.jpush.cn', 'news.airhuxi.com', 'base.api.dbscar.com', 'apilocate.amap.com', 'mobile.ipe.org.cn', 'apiinit.amap.com', 'mengine.go2map.com', 'appsearch.m.sogou.com', 'cgi.connect.qq.com', 'weixin.appsearch.m.sogou.com', 'pingma.qq.com:80', 'xunpeng.pub', 'la.api.filmon.com', 'mapi.chinalao.com', 'files.koco.com', 'www.koco.com', 'wspeed.qq.com', 'wireless.mapbar.com', 'nhlwc.cdnak.neulion.com', 'www.ketv.com', 'files.ketv.com', 'coesius.co', 'splash.appsgeyser.com', 'ads.appsgeyser.com', 'files.wcvb.com', 'www.wcvb.com', 'client.bayimob.com', 'oc.umeng.com', 'api.k.sohu.com', 'zcache.k.sohu.com', 'i.go.sohu.com', '221.179.173.175', 'n1.itc.cn', 'api.q.knet.cn', 'feed.m0bl.net', 'v.juhe.cn', 'www.frostwire.tv', 'collegesuperfan.com', 'wlog.mapbar.com', 'suixing.mapbar.com', 'app1.wms.mapbar.com', 'cdn.eyeem.com', 'api.paidui.com', 'api.wunderground.com', 'client.map.baidu.com', 'mc.aibang.com', 'r.platform.seventynine.mobi', 'm.platform.seventynine.mobi', 'cdn.millennialmedia.com', 'static.mobilecore.com', 'androidsdk.ads.mp.mydas.mobi', 'admin.appnext.com', 'server.app.55tuan.com', 'www.zopper.com', 'personalization.zopper.in', 'status.zopper.com', 'api.weather.rj.99.com', 'processor.store2phone.com', 'api.w3i.com', 'xml.livetowin.net', 'northface.gpshopper.com', 'mobilemaps.clients.google.com', 'position.tigerknows.net', 'search.tigerknows.net', 'init.tigerknows.net', 'notice.tigerknows.net', 'client.tigerknows.net', 'api.weather.rj.91.com', 'mobieadmin.sinaapp.com', 'hltq.91.com', 'e.dangdang.com', 'express.gpshopper.com', 'push.mobincube.com', 'ex.puata.info', 'blog.nola.com', 'bcp.crwdcntrl.net', 'api.brightcove.com', 'metrics.nola.com', 'blog.al.com', 'NOLUDTNFNHQE.c.richmetrics.com', 'bangbang.58.com', 'platform.58.com', 'app.58.com', 'push-gw.pingan.com.cn:3000', '218.4.143.18:5557', 'download.tbcache.com', 'infoc2.duba.net', 'zhiyue.cutt.com', 'api.allthecooks.com', 'apalon.api.appmessages.com', 'bike.map512.cn', 'www.yitaoshequ.com', 'nwsalert.onelouder.com', 'www.clypit.com', 'appcenter.falconnect.cn', 'shopping.falconnect.cn', 'ads.admarvel.com', 'api.appgenuine.com', 'api.dianping.com', 'sdk.appgenuine.com:8088', 'show.m.mediav.com', 'billboard.publicradioplayer.org', 'www.guojiaing.com', 'msg.umengcloud.com', 'sdk.open.inc2.igexin.com', 'api.fishsaying.com', 'cover.fishsaying.com', 'api.diditaxi.com.cn', 'api.udache.com', 'common.diditaxi.com.cn', '42.62.50.126', 'senego.goodbarber.com', 'api.wmaker.net', 'resized.duoapps.netdna-cdn.com', 'shoecarnival.gpshopper.com', 'usatoday.accu-weather.com', 'api.wirelessdeveloper.com', 'api.app47.mobi', 'i.usatoday.net', 'api.gannett-cdn.com', 'utl.checkpoints.com', 'p1.checkpoints.com', 'api.inmarket.com', '106.186.122.148:8001', 'api.renasoftware.com', 'app.qiaosong99.com:8888', 'moreapp.rcplatformhk.net', 'stat.bonapp.cn', 'img1.indulgesmart.com', 'iservice.bonapp.cn', 'docapi.baidu.com', 'gather.lotuseed.com:80', '119.29.29.29', '116.228.55.155:6060', 'www.newsday.com', 'www.ezhongyi.com.cn:80', 'ip.taobao.com', 'mobilelivefeeds.indiatimes.com', 'pushnotifications.timesofindia.indiatimes.com', 'pinkpad.alt12.com', 'www.ddoctor.cn', 'app.radaris.com', 'app.topstcn.com', 'apic.meidaoshenghuo.com', 'client.mobocart.in', 'e.apsalar.com', 'bebefry.gpshopper.com', 'api.pushnotification.com.br', 'ins.adsmogo.net', 'ins.adsmogo.org', 'www.wzqx.gov.cn', 'app.wapx.cn', 'ads.mp.mydas.mobi', 'blippar.com', 'odb.outbrain.com', 'weatherget.appspot.com', 'getpushone.appspot.com', 'pubads.g.doubleclick.net', 'www.fandango.com', 'pix11.com', 'api.worldweatheronline.com', 'biznessapps.com', 'googleads.g.doubleclick.net', 'goweatherex.3g.cn', 'app.nuomi.com', 'www.bocuiclub.com', 'www.sanfordhealth.org', 'scrippsdigital.com', 'service.dangkr.com', 'fab.com']
+316
+
+
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.InfoGainAttributeEval 
+Search:weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     front_page-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.supervised.attribute.AttributeSelection-Eweka.attributeSelection.CfsSubsetEval-Sweka.attributeSelection.BestFirst -D 1 -N 5
+Instances:    1268
+Attributes:   208
+[list of attributes omitted]
+Evaluation mode:evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 208 class):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.12598      49 word_freq_davis
+ 0.100408    127 word_freq_weather
+ 0.089105    154 word_freq_定位
+ 0.076994    145 word_freq_城市
+ 0.048169     92 word_freq_notification
+ 0.0479      141 word_freq_北京
+ 0.04648      14 word_freq_a天气
+ 0.038096     97 word_freq_pm
+ 0.026962    205 word_freq_附近
+ 0.023877     83 word_freq_map
+ 0.023257    108 word_freq_shell
+ 0.021289    189 word_freq_注册
+ 0.020002     72 word_freq_ishow
+ 0.017058    111 word_freq_sign
+ 0.01113      70 word_freq_industry
+ 0.009918    184 word_freq_时间
+ 0.009529     75 word_freq_km
+ 0.009529    144 word_freq_地址
+ 0.00873      38 word_freq_channel
+ 0.007932     77 word_freq_layout
+ 0.007932     29 word_freq_best
+ 0.007726    104 word_freq_responding
+ 0.006338     17 word_freq_a导航
+ 0.006338    138 word_freq_公里
+ 0.006338     37 word_freq_cancel
+ 0.006338     59 word_freq_existing
+ 0.005543     66 word_freq_gpshopper
+ 0.005543    187 word_freq_每日
+ 0.005543    120 word_freq_tinymission
+ 0.004748     99 word_freq_pts
+ 0.004748    179 word_freq_扫描
+ 0.003954      9 word_freq_a中医
+ 0.003954    202 word_freq_行业新闻
+ 0.003954     40 word_freq_chunyu
+ 0.003954     90 word_freq_nba
+ 0.003954     21 word_freq_a管
+ 0.003162    125 word_freq_unfortunately
+ 0.003162    119 word_freq_taiwan
+ 0.003162     54 word_freq_eapp
+ 0.003162    115 word_freq_ss
+ 0.003162    178 word_freq_扫一扫
+ 0.003162    106 word_freq_scan
+ 0.003162     53 word_freq_droidpiggy
+ 0.00237      42 word_freq_cmgdigital
+ 0.00237     100 word_freq_qsb
+ 0.00237       7 word_freq_aries
+ 0.00237       2 word_freq_agolo
+ 0.00237      63 word_freq_french
+ 0.00237       3 word_freq_aibaby
+ 0.00237       6 word_freq_appshare
+ 0.00237     136 word_freq_体检
+ 0.00237      62 word_freq_feedback
+ 0.00237      46 word_freq_customize
+ 0.00237     186 word_freq_柠檬
+ 0.00237      56 word_freq_erhuo
+ 0.00237      11 word_freq_a优体
+ 0.00237      18 word_freq_a当当
+ 0.00237      86 word_freq_mishu
+ 0.00237     190 word_freq_界面
+ 0.00237     114 word_freq_src
+ 0.00237     188 word_freq_泉州市
+ 0.00237      81 word_freq_logo
+ 0.00237     183 word_freq_旅行社
+ 0.00237      13 word_freq_a卜卦
+ 0.00237     181 word_freq_拨号
+ 0.00237      87 word_freq_mmc
+ 0.00237      22 word_freq_a育儿
+ 0.00237      25 word_freq_a豆瓣
+ 0.00237      34 word_freq_bug
+ 0.00237     113 word_freq_sleep
+ 0.00237      68 word_freq_homework
+ 0.00237      93 word_freq_once
+ 0.00237      30 word_freq_bh
+ 0.00237     191 word_freq_简讯
+ 0.00237     116 word_freq_starsworld
+ 0.00237      27 word_freq_a部落
+ 0.00237     128 word_freq_webrowser
+ 0.001579     82 word_freq_lxwh
+ 0.001579    110 word_freq_shyl
+ 0.001579     65 word_freq_gmail
+ 0.001579     89 word_freq_myphoto
+ 0.001579     69 word_freq_hospital
+ 0.001579     85 word_freq_mei
+ 0.001579     67 word_freq_grocery
+ 0.001579     98 word_freq_pmyihangcj
+ 0.001579    109 word_freq_shenzhi
+ 0.001579     79 word_freq_listen
+ 0.001579     61 word_freq_fan
+ 0.001579    102 word_freq_qyli
+ 0.001579     64 word_freq_geboshoubu
+ 0.001579     80 word_freq_lite
+ 0.001579     74 word_freq_kaniu
+ 0.001579     58 word_freq_exam
+ 0.001579     23 word_freq_a自如
+ 0.001579     20 word_freq_a杯
+ 0.001579     33 word_freq_box
+ 0.001579     24 word_freq_a蜜友
+ 0.001579    165 word_freq_常用
+ 0.001579     26 word_freq_a跑步
+ 0.001579     28 word_freq_bc
+ 0.001579     31 word_freq_body
+ 0.001579     19 word_freq_a故事
+ 0.001579     16 word_freq_a孕育
+ 0.001579     15 word_freq_a女生
+ 0.001579      5 word_freq_applife
+ 0.001579    203 word_freq_起名
+ 0.001579      4 word_freq_anforen
+ 0.001579     10 word_freq_a亲密
+ 0.001579    180 word_freq_投诉
+ 0.001579     12 word_freq_a减肥操
+ 0.001579    185 word_freq_来自
+ 0.001579     57 word_freq_everyday
+ 0.001579     32 word_freq_boost
+ 0.001579     35 word_freq_businessvalue
+ 0.001579     36 word_freq_buyer
+ 0.001579    131 word_freq_zhongsou
+ 0.001579     52 word_freq_done
+ 0.001579    124 word_freq_uex
+ 0.001579    123 word_freq_ucar
+ 0.001579     55 word_freq_eg
+ 0.001579     51 word_freq_desc
+ 0.001579     50 word_freq_dear
+ 0.001579     47 word_freq_dahuo
+ 0.001579     44 word_freq_crafter
+ 0.001579     41 word_freq_cl
+ 0.001579     73 word_freq_js
+ 0.001579    146 word_freq_夏趣
+ 0.001579     39 word_freq_chinaums
+ 0.000789     48 word_freq_dans
+ 0.000789      8 word_freq_aviate
+ 0.000789     71 word_freq_instasize
+ 0.000789     43 word_freq_converter
+ 0.000789     60 word_freq_fab
+ 0.000789     45 word_freq_ctrip
+ 0.000789    207 word_freq_魔镜
+ 0.000789     76 word_freq_kron
+ 0.000789    168 word_freq_平衡术
+ 0.000789    166 word_freq_常速
+ 0.000789    167 word_freq_平安
+ 0.000789    169 word_freq_广深
+ 0.000789     78 word_freq_liquor
+ 0.000789    170 word_freq_强烈建议
+ 0.000789    171 word_freq_微小
+ 0.000789    164 word_freq_常亮
+ 0.000789    163 word_freq_帖子
+ 0.000789    162 word_freq_小鱼
+ 0.000789    161 word_freq_小妹妹
+ 0.000789    156 word_freq_审核
+ 0.000789    157 word_freq_宫保鸡
+ 0.000789    158 word_freq_家园
+ 0.000789    159 word_freq_富余
+ 0.000789    160 word_freq_小圆点
+ 0.000789    172 word_freq_心加
+ 0.000789    173 word_freq_快捷方式
+ 0.000789    174 word_freq_思考
+ 0.000789    196 word_freq_舞友圈
+ 0.000789    198 word_freq_芝麻
+ 0.000789    199 word_freq_草莓
+ 0.000789    200 word_freq_菲尔
+ 0.000789    201 word_freq_藏山
+ 0.000789    204 word_freq_进口
+ 0.000789    197 word_freq_节目预告
+ 0.000789    195 word_freq_致电
+ 0.000789    175 word_freq_怪传
+ 0.000789    194 word_freq_美观
+ 0.000789    176 word_freq_情報
+ 0.000789    177 word_freq_打蜡
+ 0.000789    182 word_freq_搜优
+ 0.000789    192 word_freq_紫外线
+ 0.000789    193 word_freq_继承
+ 0.000789    155 word_freq_宠物猫
+ 0.000789    153 word_freq_学一学
+ 0.000789    152 word_freq_婴儿
+ 0.000789    103 word_freq_record
+ 0.000789    105 word_freq_round
+ 0.000789    107 word_freq_scanning
+ 0.000789    112 word_freq_singles
+ 0.000789    117 word_freq_stocard
+ 0.000789    118 word_freq_subscribe
+ 0.000789    206 word_freq_顯示
+ 0.000789    101 word_freq_quickbooks
+ 0.000789    122 word_freq_tropical
+ 0.000789     96 word_freq_paynearme
+ 0.000789     84 word_freq_meetup
+ 0.000789     88 word_freq_moovit
+ 0.000789     91 word_freq_newsday
+ 0.000789     94 word_freq_pacer
+ 0.000789     95 word_freq_pay
+ 0.000789    121 word_freq_tmz
+ 0.000789    126 word_freq_wawa
+ 0.000789    151 word_freq_妙招
+ 0.000789    140 word_freq_出海
+ 0.000789    143 word_freq_噪声
+ 0.000789    147 word_freq_大纲
+ 0.000789    148 word_freq_大讲堂
+ 0.000789    149 word_freq_女司机
+ 0.000789    150 word_freq_女孩
+ 0.000789    142 word_freq_双击
+ 0.000789    139 word_freq_内涵
+ 0.000789    129 word_freq_wish
+ 0.000789    137 word_freq_偏高
+ 0.000789    130 word_freq_yelp
+ 0.000789    132 word_freq_zlycare
+ 0.000789    133 word_freq_万公里
+ 0.000789    134 word_freq_个体
+ 0.000789    135 word_freq_交个
+ 0.000789      1 word_freq_advertisement
+
+Selected attributes: 49,127,154,145,92,141,14,97,205,83,108,189,72,111,70,184,75,144,38,77,29,104,17,138,37,59,66,187,120,99,179,9,202,40,90,21,125,119,54,115,178,106,53,42,100,7,2,63,3,6,136,62,46,186,56,11,18,86,190,114,188,81,183,13,181,87,22,25,34,113,68,93,30,191,116,27,128,82,110,65,89,69,85,67,98,109,79,61,102,64,80,74,58,23,20,33,24,165,26,28,31,19,16,15,5,203,4,10,180,12,185,57,32,35,36,131,52,124,123,55,51,50,47,44,41,73,146,39,48,8,71,43,60,45,207,76,168,166,167,169,78,170,171,164,163,162,161,156,157,158,159,160,172,173,174,196,198,199,200,201,204,197,195,175,194,176,177,182,192,193,155,153,152,103,105,107,112,117,118,206,101,122,96,84,88,91,94,95,121,126,151,140,143,147,148,149,150,142,139,129,137,130,132,133,134,135,1 : 207
+
+800 805 898
+2513 221
+0.912057302029

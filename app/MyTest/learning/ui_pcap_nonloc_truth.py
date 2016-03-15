@@ -284,6 +284,7 @@ def str2words(str, wordlist):
 
 # read from txt and get url
 def struct_fea_cal(dirname, filename, titles, titles_label, ui_label):
+    global type2_count, madlist, mad_count
     pcapreader = csv.reader(open(dirname + '/' + filename, 'rb'), delimiter='\t')
     result = list(pcapreader)
     result = np.array(result)
@@ -318,12 +319,16 @@ def struct_fea_cal(dirname, filename, titles, titles_label, ui_label):
             #uri = uri.split['?'][0]
             str2words(uri, wordlist)
             break
+    # if good loc but is ad, type II illegal
     if filter_ad and host and ui_label == "2":
         for ad in adlist:
             if re.search(ad, host):
+                type2_count += 1
+                if host in madlist:
+                    mad_count += 1
                 return False
-                ui_label = 1
-                break
+                # ui_label = 1
+                # break
     if not host:
         host_pcap[dirname + '/' + filename] = host
     titles.append(' '.join(wordlist))
@@ -351,6 +356,12 @@ adlist = ['talkingdata', 'easemob', 'appx.91', 'ads', 'share.mob', 'flurry', 'um
           'domob', 'scorecard', 'mobvoi', 'bmob', 'igeak', 'wirelessdeve', 'apps123', 'ixingji.com'
           ,'analytics', 'lizhi', 'ynuf.alipay.com', 'kiip', 'appspot', 'openspeech', 'tuisong', 'igexin'
           ,'wapx', 'push']
+file = open('/home/hao/Dropbox/workspace/app/app/MyTest/ad_domains.txt', 'r')
+madlist = file.readlines()
+for adhost in madlist:
+    madlist.remove(adhost)
+    adhost = adhost.split('\n')[0]
+    madlist.append(adhost)
 filter_ad = True
 host_pcap = {}
 fea_val_list = []
@@ -364,6 +375,11 @@ test_file = open('test_ui_pcap__bad.arff', 'w')
 urilist = []
 distinct_uri = []
 domain_list = []
+
+# count of type ii ilegal
+type2_count = 0;
+mad_count = 0;
+
 get_data(ui_label_txt)
 train_file.close()
 test_file.close()
@@ -371,7 +387,10 @@ test_file.close()
 json.dump(vocabulary, open('train_vocab.json', 'w'))
 
 
-print domain_list
-print len(domain_list)
 
+print domain_list
+print "len domain:" + str(len(domain_list))
+print "typeII: " + str(type2_count)
+print madlist
+print "mad: " + str(mad_count)
 
